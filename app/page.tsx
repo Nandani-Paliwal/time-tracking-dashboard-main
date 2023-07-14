@@ -20,6 +20,10 @@ export default function Home() {
     "daily" | "weekly" | "monthly"
   >("daily");
 
+  const [state, setState] = useState<
+  "day" | "week" | "month"
+>("day");
+
   type TimeframeType = {
     previous: number;
     current: number;
@@ -122,6 +126,7 @@ export default function Home() {
             onClick={() => {
               // setActiveTimeFrame(dailyTimeFrame);
               setActiveTrack("daily");
+              setState("day");
             }}
             className={`activity-tracker-option track-daily ${
               activeTrack === "daily" ? "track-active" : ""
@@ -133,6 +138,7 @@ export default function Home() {
             onClick={() => {
               // setActiveTimeFrame(weeklyTimeFrame);
               setActiveTrack("weekly");
+              setState("week");
             }}
             className={`activity-tracker-option track-weekly ${
               activeTrack === "weekly" ? "track-active" : ""
@@ -144,6 +150,7 @@ export default function Home() {
             onClick={() => {
               // setActiveTimeFrame(monthlyTimeFrame);
               setActiveTrack("monthly");
+              setState("month");
             }}
             className={`activity-tracker-option track-monthly ${
               activeTrack === "monthly" ? "track-active" : ""
@@ -170,7 +177,7 @@ export default function Home() {
                   hrs
                 </h2>
                 <p>
-                  Last Week -{" "}
+                  Last {state} -{" "}
                   <span id="work-previous">
                     {stat.timeframes[activeTrack].previous}
                   </span>{" "}

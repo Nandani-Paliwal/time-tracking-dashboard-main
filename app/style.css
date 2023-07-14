@@ -4,6 +4,7 @@
     box-sizing: border-box;
     padding: 0%;
     margin: 0;
+    /* overflow: hidden; */
     /* background-color: hsl(235, 46%, 20%); */
 }
 body{
@@ -148,6 +149,7 @@ body{
         justify-content: center;
         align-items: center;
         margin: 2rem;
+        width: 84.9%;
     }
     .profile-cont{
         width: 100%;
@@ -155,7 +157,6 @@ body{
     .profile{
         display: flex;
         flex-direction: row;
-        width: auto;
     }
     .profile-detail{
         display: flex;
