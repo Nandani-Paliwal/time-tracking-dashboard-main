@@ -4,7 +4,7 @@
     box-sizing: border-box;
     padding: 0%;
     margin: 0;
-    /* overflow: hidden; */
+    overflow-x: hidden;
     /* background-color: hsl(235, 46%, 20%); */
 }
 body{
@@ -59,7 +59,7 @@ body{
     color: hsl(238, 27%, 53%);
     font-weight: 600;
     margin: 1.5rem 1rem;
-    gap: 1rem;
+    gap: 2rem;
 }
 .activities
 {
@@ -167,8 +167,6 @@ body{
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        gap: 4rem;
-        margin: 2rem;
     }
     .avatar{
         margin-right: 2em;
