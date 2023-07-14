@@ -16,7 +16,8 @@ body{
     flex-direction: row;
     align-items:flex-start;
     justify-content: center;
-    margin: 4rem;  
+    margin: 4rem;
+    height: 100%;  
 }
 .profile-cont{
     display: flex;
@@ -26,6 +27,7 @@ body{
     border-radius: 0.8em;
     color: white;
     margin: 2rem;
+    width: 35%;
 }
 .profile
 {
