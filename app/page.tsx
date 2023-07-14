@@ -154,8 +154,8 @@ export default function Home() {
         </div>
       </div>
       <div className="activities">
-        {detail.map((stat: DataType) => (
-          <div className={stat.iconStyle}>
+        {detail.map((stat: DataType, index) => (
+          <div className={stat.iconStyle} key={index}>
             {renderLogoImages(stat.id)}
             <div className="card">
               <div className="sub-title">
