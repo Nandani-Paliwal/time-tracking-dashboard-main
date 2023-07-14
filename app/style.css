@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+*
+{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0;
+    /* background-color: hsl(235, 46%, 20%); */
+}
+body{
+    background-color: hsl(226, 43%, 10%);
+    font-family: 'Rubik', sans-serif;
+}
+.container
+{
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    justify-content: center;
+    margin: 4rem;  
+}
+.profile-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 0.8em;
+    color: white;
+    margin: 2rem;
+}
+.profile
+{
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    border-radius: 0.8em;
+    background-color: hsl(246, 80%, 60%);
+}
+.profile-detail{
+    display: flex;
+    flex-direction: column;
+}
+.avatar{
+    margin-bottom: 2em;
+    width: 60%;
+    height: auto;
+}
+.track
+{
+    display:flex;
+    flex-direction: column;
+    align-items: space-evenly;
+    justify-content: flex-start;
+    color: hsl(238, 27%, 53%);
+    font-weight: 600;
+    margin: 1.5rem 1rem;
+    gap: 1rem;
+}
+.activities
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 2em;
+}
+.activity-tracker-option{
+    cursor: pointer;
+    all: unset;
+}
+.activity-tracker-option:hover{
+    color: rgba(255, 255, 255, 0.785);
+    cursor: pointer;
+}
+.track-active{
+    color: white;
+}
+.Track p{
+    padding:0.4em ;
+    
+}
+.img-work{
+    background-color: hsl(15, 100%, 70%);
+}
+.img-play{
+    background-color: hsl(195, 74%, 62%);
+}
+.img-study{
+    background-color: hsl(348, 100%, 68%);
+}
+.img-exercise{
+    background-color:  hsl(145, 58%, 55%);
+}
+.img-social{
+    background-color:  hsl(264, 64%, 52%);
+}
+.img-self-care{
+    background-color: hsl(43, 84%, 65%);
+}
+.main{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+    border-radius: 0.9rem;
+}
+.logo{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(235, 46%, 20%);
+    color: aliceblue;
+    padding: 2em;
+    gap: 1rem;
+    border-radius: 0.9em;
+    z-index: 2;
+    cursor: pointer;
+}
+.card:hover{
+    background-color: hsl(236, 29%, 38%);
+}
+.sub-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* font-size: 18px; */
+}
+.eclipse{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 425px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem;
+    }
+    .profile-cont{
+        width: 100%;
+    }
+    .profile{
+        display: flex;
+        flex-direction: row;
+    }
+    .profile-detail{
+        display: flex;
+        flex-direction: column;
+    }
+    .track{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+        margin: 2rem;
+    }
+    .avatar{
+        margin-right: 2em;
+        width: 30%;
+    }
+    .activities{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .card{
+        width: 100%;
+    }
+    .hr-detail{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }    
+}
