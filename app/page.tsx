@@ -124,7 +124,7 @@ export default function Home() {
         <div className="track">
           <button
             onClick={() => {
-              // setActiveTimeFrame(dailyTimeFrame);
+              setActiveTimeFrame(dailyTimeFrame);
               setActiveTrack("daily");
               setState("day");
             }}
@@ -136,7 +136,7 @@ export default function Home() {
           </button>
           <button
             onClick={() => {
-              // setActiveTimeFrame(weeklyTimeFrame);
+              setActiveTimeFrame(weeklyTimeFrame);
               setActiveTrack("weekly");
               setState("week");
             }}
@@ -148,7 +148,7 @@ export default function Home() {
           </button>
           <button
             onClick={() => {
-              // setActiveTimeFrame(monthlyTimeFrame);
+              setActiveTimeFrame(monthlyTimeFrame);
               setActiveTrack("monthly");
               setState("month");
             }}
@@ -161,7 +161,7 @@ export default function Home() {
         </div>
       </div>
       <div className="activities">
-        {detail.map((stat: DataType, index) => (
+        {detail.map((stat: DataType, index) => (   
           <div className={stat.iconStyle} key={index}>
             {renderLogoImages(stat.id)}
             <div className="card">
@@ -179,7 +179,7 @@ export default function Home() {
                 <p>
                   Last {state} -{" "}
                   <span id="work-previous">
-                    {stat.timeframes[activeTrack].previous}
+                    {stat.timeframes.previous} 
                   </span>{" "}
                   hrs
                 </p>
